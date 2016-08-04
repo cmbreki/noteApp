@@ -1,12 +1,13 @@
 {
-  "name": "bowerJson",
+  "name": "noteApp",
+  "homepage": "https://github.com/cmbreki/noteApp",
   "authors": [
-    "cbreki <c.breki@innora.gr>"
+    "cmbreki <cbreki@hotmail.gr>"
   ],
-  "description": "external dependencies",
+  "description": "an demo app using Bootstrap and AngularJS",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,14 +16,9 @@
     "tests"
   ],
   "dependencies": {
-    "leaflet-plugins": "^1.6.1",
-    "ui-leaflet-layers": "*",
-    "ui-leaflet": "^1.0.1",
     "angular-animate": "1.5.7",
-    "angular-material": "^1.0.9"
-  },
-  "resolutions": {
-    "ui-leaflet": "master",
-    "angular": "^1.4.8"
+    "angular-material": "^1.0.9",
+    "angular-simple-logger": "~0.1.4",
+    "bootstrap": "^3.3.7"
   }
 }
