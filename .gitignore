@@ -1,0 +1,13 @@
+node_modules/*
+
+#bower components
+public/bower_components/*
+
+#JSON
+public/json/*
+
+#img
+public/img/*
+
+#server file
+server.js

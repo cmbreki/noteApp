@@ -1,0 +1,28 @@
+{
+  "name": "bowerJson",
+  "authors": [
+    "cbreki <c.breki@innora.gr>"
+  ],
+  "description": "external dependencies",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet-plugins": "^1.6.1",
+    "ui-leaflet-layers": "*",
+    "ui-leaflet": "^1.0.1",
+    "angular-animate": "1.5.7",
+    "angular-material": "^1.0.9"
+  },
+  "resolutions": {
+    "ui-leaflet": "master",
+    "angular": "^1.4.8"
+  }
+}
