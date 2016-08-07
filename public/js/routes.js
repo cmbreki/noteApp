@@ -5,20 +5,20 @@ angular.module('noteApp').config(function($routeProvider){
       })
       .when('/notes',{
           templateUrl:"templates/notes-index.html",
-          controller: "NotesIndexController"
+          controller: "NoteIndexController"
       })
 
       .when('/notes/new',{
           templateUrl:"templates/notes-new.html",
-          controller: "NotesCreateController"
+          controller: "NoteCreateController"
       })
       .when('/notes/:id',{
           templateUrl:"templates/notes-show.html",
-          controller: "NotesShowController"
+          controller: "NoteShowController"
       })
       .when('/notes/:id/edit', {
           templateUrl:"templates/notes-edit.html",
-          controller: "NotesEditController"
+          controller: "NoteEditController"
       })
 
 });
