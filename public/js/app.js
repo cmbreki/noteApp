@@ -1,1 +1,1 @@
-angular.module('noteApp', ['ngRoutes']);
+angular.module('noteApp', ['ngRoute','ngResource']);

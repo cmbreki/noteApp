@@ -4,20 +4,20 @@ angular.module('noteApp').config(function($routeProvider){
         redirectTo:'/notes'
       })
       .when('/notes',{
-          templateUrl:"templates/notes-index.html"
+          templateUrl:"templates/notes-index.html",
           controller: "NotesIndexController"
       })
 
       .when('/notes/new',{
-          templateUrl:"templates/notes-new.html"
+          templateUrl:"templates/notes-new.html",
           controller: "NotesCreateController"
       })
       .when('/notes/:id',{
-          templateUrl:"templates/notes-show.html"
+          templateUrl:"templates/notes-show.html",
           controller: "NotesShowController"
       })
-      .when('/notes/:id/edit',{
-          templateUrl:"templates/notes-edit.html"
+      .when('/notes/:id/edit', {
+          templateUrl:"templates/notes-edit.html",
           controller: "NotesEditController"
       })
 
