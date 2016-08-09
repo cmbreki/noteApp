@@ -2,7 +2,7 @@ angular.module('noteApp').controller('NoteShowController',['Note','$scope','$htt
 
  $scope.note = Note.query({id:$routeParams.id});
   console.log($scope.note);
-  
+
 
 /* $http.get('/notes/'+$routeParams.id).success(function(response){
 
