@@ -1,1 +1,20 @@
-<h1>The notes edit </h1>
+<h1>Edit: {{note[0].title}} </h1>
+<form>
+  <fieldset class="form-group">
+    <label for="title">Title</label>
+    <input class="form-control" type="text" id="title" name="title" ng-model="note[0].title">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="description">Description</label>
+    <input class="form-control" type="text" id="description" name="description" ng-model="note[0].description">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="content">Content</label>
+    <textarea class="form-control" type="text" id="content" name="content" ng-model="note[0].content"></textarea>
+  </fieldset>
+
+  <input type="Submit" value="Submit" class="btn btn-default" ng-click="saveNote(note[0])"></input>
+
+</form>
