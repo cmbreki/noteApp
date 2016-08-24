@@ -4,4 +4,4 @@
 <p>{{note[0].content}}</p>
 <p><span class="label label-info">{{note[0].category}}</span></p>
 <a  ng-href="#/notes/{{note[0].id}}/edit" class="btn btn-default">Edit Note</a>
-<a href="" class="btn btn-danger">Delete</a>
+<a href="" ng-click="deleteNote(note[0])"class="btn btn-danger">Delete</a>
