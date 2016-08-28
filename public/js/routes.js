@@ -20,5 +20,13 @@ angular.module('noteApp').config(function($routeProvider){
           templateUrl:"templates/notes-edit.html",
           controller: "NoteEditController"
       })
+      .when('/users', {
+          templateUrl:"templates/users-index.html",
+          controller: "UsersIndexController"
+      })
+      .when('/users/:id',{
+          templateUrl:"templates/users-show.html",
+          controller: "UsersShowController"
+      })
 
 });

@@ -6,13 +6,11 @@ angular.module('noteApp').controller('NoteCreateController',['$scope','Note','$l
 
   $scope.note.category='General';
   $scope.note.category_id = 1;
-  //$scope.note.date = Date.now();
-  $scope.note.date = "24-12-2016";
   $scope.isSubmitting=true;
-  note.$save().finally(function(){
+  note.$save().then(function(){
+    $location.path('/notes/');
+  }).finally(function(){
       $scope.isSubmitting = false;
-      $location.path('/notes/');
   });
-
  }
 }]);
