@@ -6,6 +6,14 @@
   </fieldset>
 
   <fieldset class="form-group">
+      <label for="category">Category</label>
+      <select ng-model="note.category_id">
+       <option value="">---Please select---</option>
+       <option ng-repeat="category in categories" value="{{category.id}}">{{category.name}}</option>
+     </select>
+    </fieldset>
+
+  <fieldset class="form-group">
     <label for="description">Description</label>
     <input class="form-control" type="text" id="description" name="description" ng-model="note.description">
   </fieldset>

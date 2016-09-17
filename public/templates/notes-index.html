@@ -1,10 +1,11 @@
 <h1> Notes <a class="btn btn-default" href="#/notes/new"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>New Note</a></h1>
+<category-selector ng-model=search.category></category-selector>
 <div class = "row">
   <div ng-repeat="note in notes" class="col-sm-6 col" style="float: right; text-align: center">
       <div class="card card-block" style="width: 20rem;">
               <h3 class="card-title"><a ng-href="#/notes/{{note.id}}">{{note.title}}</a></h3>
               <p class="card-text">{{note.description}}</p>
-              <p><span class="label label-info">{{note.category}}</span></p>
+              <p><span class="label label-info">{{note.name}}</span></p>
       </div>
   </div>
 </div>
