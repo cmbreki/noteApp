@@ -5,7 +5,20 @@ angular.module('noteApp').directive('categorySelector',['Category',function(Cate
     templateUrl:'../../templates/categorySelector.html',
     link: function(scope,element,attrs){
       scope.categories = Category.query();
-      console.log(scope.categories);
+      var activeCategory = {};
+
+      scope.isActive =  function(category){
+        return activeCategory && activeCategory.id === category.id;
+      }
+
+      scope.toggleCategory = function(category){
+          activeCategory=category;
+
+
+      }
+
+
+
 
     }
   }
