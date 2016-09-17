@@ -1,9 +1,10 @@
-angular.module('noteApp').controller('NoteEditController',['Note','$scope','$http','$routeParams','$location',function(Note,$scope,$http,$routeParams,$location){
+angular.module('noteApp').controller('NoteEditController',['Note','Category','$scope','$http','$routeParams','$location',function(Note,Category,$scope,$http,$routeParams,$location){
 
  $scope.note = Note.query({id:$routeParams.id});
  $scope.isSubmitting = false;
- console.log($scope.note);
+ $scope.categories=[];
 
+ $scope.categories = Category.query();
 
 $scope.saveNote = function(note){
     $scope.isSubmitting=true;
@@ -12,7 +13,6 @@ $scope.saveNote = function(note){
       $location.path("/notes/"+ note.id);
   });
   //
-
 }
 
 

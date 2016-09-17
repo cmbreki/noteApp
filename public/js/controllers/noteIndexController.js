@@ -3,4 +3,5 @@ angular.module('noteApp').controller('NoteIndexController',['Note','$scope', fun
 $scope.notes = Note.query();
 
 console.log($scope.notes);
+
 }]);
