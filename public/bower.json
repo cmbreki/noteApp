@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "angular-animate": "1.5.7",
-    "angular-material": "^1.0.9",
+    "angular-material": "1.0.9",
     "angular-simple-logger": "~0.1.4",
     "bootstrap": "^3.3.7",
     "angular-route": "1.5.7",

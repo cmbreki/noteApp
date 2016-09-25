@@ -1,3 +1,5 @@
-angular.module('noteApp', ['ngRoute','ngResource', 'ngGravatar']).config(function(GravatarProvider){
-  GravatarProvider.setSize(100);
+angular.module('noteApp', ['ngRoute','ngResource' ,'ngMaterial']).config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+    .primaryPalette('pink')
+    .accentPalette('orange');
 });
