@@ -68,13 +68,14 @@ __2.__ categories
 ##### Insert Records  
 
 ```sh
-$ INSERT INTO categories (name,color) VALUES ('General','#FFFFFF');
-		INSERT INTO categories (name,color) VALUES ('Wish','#F8BBD0');
-		INSERT INTO categories (name,color) VALUES ('Dream','#E91E63');
-		INSERT INTO categories (name,color) VALUES ('Idea','#C2185B');
-		INSERT INTO categories (name,color) VALUES ('Gossip','#FF4081');
-		INSERT INTO categories (name,color) VALUES ('Thoughts','#757575');
-		INSERT INTO categories (name,color) VALUES ('Other','#212121');
+$ 	INSERT INTO categories (name,color) VALUES ('Memories','#03A9F4');
+$	INSERT INTO categories (name,color) VALUES ('Wish','#9C27B0');
+$	INSERT INTO categories (name,color) VALUES ('Dream','#E91E63');
+$	INSERT INTO categories (name,color) VALUES ('Idea','#C2185B');
+$	INSERT INTO categories (name,color) VALUES ('Gossip','#FFC107');
+$	INSERT INTO categories (name,color) VALUES ('Thoughts','#BDBDBD');
+$	INSERT INTO categories (name,color) VALUES ('Other','#CDDC39');
+$	INSERT INTO categories (name,color) VALUES ('Gratitude','#B2DFDB');
 ```
 
 ##### Getting the data:

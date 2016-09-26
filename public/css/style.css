@@ -1,0 +1,44 @@
+.gridListdemoBasicUsage md-grid-list {
+  margin: 8px; }
+
+.gridListdemoBasicUsage .wishes {
+  /*background: #f5f5f5;*/
+  background:#BDBDBD;
+}
+
+.gridListdemoBasicUsage .dreams {
+  /*background: #b9f6ca;*/
+  background:#E91E63;
+}
+
+.gridListdemoBasicUsage .ideas {
+  /*background: #ffff8d; */
+  background:#C2185B;
+}
+
+.gridListdemoBasicUsage .gossip {
+  /*background: #84ffff; */
+  background:#FFC107;
+}
+
+.gridListdemoBasicUsage .thoughts {
+  /*background: #b388ff;*/
+  background:#9C27B0;
+}
+
+.gridListdemoBasicUsage .other {
+  /*background: #ff8a80; */
+  background:#CDDC39;
+}
+
+.gridListdemoBasicUsage .memories {
+  background:#03A9F4;
+}
+
+.gridListdemoBasicUsage .gratitude {
+  background:#B2DFDB;
+}
+
+
+.gridListdemoBasicUsage md-grid-tile {
+  transition: all 400ms ease-out 50ms; }
