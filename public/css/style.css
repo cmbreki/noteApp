@@ -6,15 +6,23 @@ font-family: 'Roboto';
   margin: 8px; }
 
 .gridListdemoBasicUsage .ideas {
-  background:#9C27B0;
-/*  -webkit-transition: height 4s ease-out 50ms;
-  -moz-transition: height 4s ease-out 50ms;
-  -o-transition: height 4s ease-out 50ms;
-   transition: height 4s ease-out 50ms; */
+
+  background-image: url('../img/ideas.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transition: background 1.5s ;
+  -moz-transition: background 1.5s ;
+  -o-transition: background 1.5s ;
+  transition: background 1.5s ;
+
+}
+
+.gridListdemoBasicUsage .ideas:hover {
+    background:#9C27B0;
 }
 
 .gridListdemoBasicUsage a {
-  webkit-transition: font-size 400ms ease-out 50ms;
+ -webkit-transition: font-size 400ms ease-out 50ms;
   -moz-transition: font-size 400ms ease-out 50ms;
   -o-transition: font-size 400ms ease-out 50ms;
   transition: font-size 400ms ease-out 50ms;
@@ -47,7 +55,11 @@ font-family: 'Roboto';
 
 .gridListdemoBasicUsage .dreams {
   /*background: #ff8a80; */
-  background:#c0ca33;
+/* background:#c0ca33; */
+    background-image: url('../img/dreams.jpg');
+    background-repeat: no-repeat;
+    background-size: 300%;
+
 }
 
 .gridListdemoBasicUsage  .chitChat {
