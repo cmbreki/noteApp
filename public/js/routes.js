@@ -1,12 +1,21 @@
 angular.module('noteApp').config(function($routeProvider){
     $routeProvider
       .when('/',{
-        redirectTo:'/notes'
+        redirectTo:'/intro'
       })
-      .when('/notes',{
+      .when('/intro',{
+        templateUrl:"templates/notes-intro.html",
+        controller: "NoteIntroController"
+      })
+
+    /*  .when('/notes',{
           templateUrl:"templates/notes-index.html",
           controller: "NoteIndexController"
-      })
+      }) */
+      .when('/notes/:category',{
+            templateUrl:"templates/notes-index.html",
+            controller: "NoteIndexController"
+        })
 
       .when('/notes/new',{
           templateUrl:"templates/notes-new.html",
@@ -20,13 +29,4 @@ angular.module('noteApp').config(function($routeProvider){
           templateUrl:"templates/notes-edit.html",
           controller: "NoteEditController"
       })
-      .when('/users', {
-          templateUrl:"templates/users-index.html",
-          controller: "UsersIndexController"
-      })
-      .when('/users/:id',{
-          templateUrl:"templates/users-show.html",
-          controller: "UsersShowController"
-      })
-
 });

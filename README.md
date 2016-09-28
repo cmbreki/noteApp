@@ -4,10 +4,10 @@ This application consists my first attempt to create a simple CRUD app using the
 
 The tools i'm using are:
 
-- __P__ostgreSQL
-- __E__xpress
-- __A__ngularJS
-- __N__odeJS  
+- PostgreSQL
+- Express
+- AngularJS
+- NodeJS  
 _for Styling_
 - Angular Material
 
@@ -20,12 +20,12 @@ __Database Name:__  notes_database
 
 Create the DATABASE
 ```sh
-$ CREATE DATABASE notes_database  
+$ CREATE DATABASE notes_database;  
 ```
 Enter the DATABASE
 
 ```sh  
-$ \c notes_database  
+$ \c notes_database;  
 ```
 
 #### Tables:
@@ -68,14 +68,14 @@ __2.__ categories
 ##### Insert Records  
 
 ```sh
-$ 	INSERT INTO categories (name,color) VALUES ('Memories','#03A9F4');
-$	INSERT INTO categories (name,color) VALUES ('Wish','#9C27B0');
-$	INSERT INTO categories (name,color) VALUES ('Dream','#E91E63');
-$	INSERT INTO categories (name,color) VALUES ('Idea','#C2185B');
+$	INSERT INTO categories (name,color) VALUES ('Ideas','#9C27B0');
+$	INSERT INTO categories (name,color) VALUES ('Wishes','#26a69a');
+$ INSERT INTO categories (name,color) VALUES ('Memories','#C2185B');
+$	INSERT INTO categories (name,color) VALUES ('Thoughts','#03A9F4');
 $	INSERT INTO categories (name,color) VALUES ('Gossip','#FFC107');
-$	INSERT INTO categories (name,color) VALUES ('Thoughts','#BDBDBD');
-$	INSERT INTO categories (name,color) VALUES ('Other','#CDDC39');
-$	INSERT INTO categories (name,color) VALUES ('Gratitude','#B2DFDB');
+$	INSERT INTO categories (name,color) VALUES ('Dreams','#c0ca33');
+$	INSERT INTO categories (name,color) VALUES ('Chit Chat','#E91E63');
+$	INSERT INTO categories (name,color) VALUES ('All','#ff6d00');
 ```
 
 ##### Getting the data:
