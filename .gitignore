@@ -9,8 +9,6 @@ public/json/*
 #img
 public/img/*
 
-#server file
-server.js
 
 #notes
 *.txt
