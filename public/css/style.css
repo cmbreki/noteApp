@@ -7,7 +7,8 @@ font-family: 'Roboto';
 
 .gridListdemoBasicUsage .ideas {
 
-  background-image: url('../img/ideas.jpg');
+/*  background-image: url('../img/ideas.jpg'); */
+  background:#9C27B0;
   background-repeat: no-repeat;
   background-size: 100%;
   -webkit-transition: background 1.5s ;
@@ -55,8 +56,8 @@ font-family: 'Roboto';
 
 .gridListdemoBasicUsage .dreams {
   /*background: #ff8a80; */
-/* background:#c0ca33; */
-    background-image: url('../img/dreams.jpg');
+    background:#c0ca33;
+  /*  background-image: url('../img/dreams.jpg'); */
     background-repeat: no-repeat;
     background-size: 300%;
 

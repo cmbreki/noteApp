@@ -8,14 +8,14 @@ angular.module('noteApp').config(function($routeProvider){
         controller: "NoteIntroController"
       })
 
-    /*  .when('/notes',{
+      .when('/notes',{
           templateUrl:"templates/notes-index.html",
           controller: "NoteIndexController"
-      }) */
-      .when('/notes/:category',{
+      })
+    /*  .when('/notes/:category',{
             templateUrl:"templates/notes-index.html",
             controller: "NoteIndexController"
-        })
+        }) */
 
       .when('/notes/new',{
           templateUrl:"templates/notes-new.html",
