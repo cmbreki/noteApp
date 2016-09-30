@@ -1,6 +1,6 @@
-angular.module('noteApp').controller('NoteShowController',['Note','$scope','$http','$routeParams','$location',function(Note,$scope,$http,$routeParams,$location){
-
- $scope.note = Note.query({id:$routeParams.id});
+angular.module('noteApp').controller('NoteShowController',['Note','$scope','$http','$stateParams','$location',function(Note,$scope,$http,$stateParams,$location){
+  console.log("Hello SHOW  note controller");
+ $scope.note = Note.query({id:$stateParams.id});
   console.log($scope.note);
 
 

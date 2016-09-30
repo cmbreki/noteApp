@@ -1,5 +1,6 @@
 .body{
 font-family: 'Roboto';
+background:#0A2229;
 }
 
 .gridListdemoBasicUsage md-grid-list {
@@ -7,8 +8,8 @@ font-family: 'Roboto';
 
 .gridListdemoBasicUsage .ideas {
 
-/*  background-image: url('../img/ideas.jpg'); */
-  background:#9C27B0;
+  background-image: url('../img/ideas.jpg');
+/*  background:#9C27B0; */
   background-repeat: no-repeat;
   background-size: 100%;
   -webkit-transition: background 1.5s ;
@@ -46,18 +47,21 @@ font-family: 'Roboto';
 }
 
 .gridListdemoBasicUsage .thoughts {
-  background:#03A9F4;
+  /*background:#03A9F4;*/
+  background-image: url('../img/thoughts2.jpg');
 }
 
 .gridListdemoBasicUsage .gossip {
   /*background: #84ffff; */
   background:#FFC107;
+  background-size: 50%;
+
 }
 
 .gridListdemoBasicUsage .dreams {
   /*background: #ff8a80; */
-    background:#c0ca33;
-  /*  background-image: url('../img/dreams.jpg'); */
+  /*  background:#c0ca33; */
+    background-image: url('../img/dreams.jpg');
     background-repeat: no-repeat;
     background-size: 300%;
 

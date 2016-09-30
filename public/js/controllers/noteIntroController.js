@@ -8,7 +8,6 @@ this.setCategory=function(category){
   console.log("The category is:");
   console.log(category);
   Shared.setCategoryId(category);
-  $window.location.href = "#/notes";
 }
 
 

@@ -49,5 +49,14 @@ angular.module('noteApp').config(function config($stateProvider){
     controller:"NoteCreateController as noteCreateCtrl",
     templateUrl:"templates/notes-new.html"
   })
+  $stateProvider.state('details',{
+      url:"/notes/:id",
+      params:{
+      				id: null,
+      			},
+      controller: "NoteShowController",
+      templateUrl:"templates/notes-show.html"
+
+  })
 
 })
