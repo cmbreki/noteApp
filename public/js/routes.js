@@ -1,4 +1,4 @@
-angular.module('noteApp').config(function($routeProvider){
+/*angular.module('noteApp').config(function($routeProvider){
     $routeProvider
       .when('/',{
         redirectTo:'/intro'
@@ -8,7 +8,7 @@ angular.module('noteApp').config(function($routeProvider){
         controller: "NoteIntroController"
       })
 
-      .when('/notes',{
+      .when('/notes/',{
           templateUrl:"templates/notes-index.html",
           controller: "NoteIndexController"
       })
@@ -17,7 +17,7 @@ angular.module('noteApp').config(function($routeProvider){
             controller: "NoteIndexController"
         }) */
 
-      .when('/notes/new',{
+    /*  .when('/notes/new',{
           templateUrl:"templates/notes-new.html",
           controller: "NoteCreateController"
       })
@@ -30,3 +30,24 @@ angular.module('noteApp').config(function($routeProvider){
           controller: "NoteEditController"
       })
 });
+ */
+
+angular.module('noteApp').config(function config($stateProvider){
+
+  $stateProvider.state("intro",{
+    url:"/",
+    controller:"NoteIntroController as noteIntroCtrl",
+    templateUrl:"templates/notes-intro.html"
+  })
+  $stateProvider.state("notes",{
+    url:"/notes",
+    controller:"NoteIndexController as noteIndexCtrl",
+    templateUrl:"templates/notes-index.html"
+  })
+  $stateProvider.state("new",{
+    url:"/new",
+    controller:"NoteCreateController as noteCreateCtrl",
+    templateUrl:"templates/notes-new.html"
+  })
+
+})

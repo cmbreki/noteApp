@@ -6,37 +6,37 @@
 
         <md-grid-tile class="ideas"
               md-rowspan="3" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
-              <h1><a ng-href="#/notes/ideas">Ideas</a></h1>
+              <h1><a ui-sref="notes" ng-click="noteIntroCtrl.setCategory(1)">Ideas</a></h1>
           </md-grid-tile>
 
           <md-grid-tile class="wishes">
-              <h1><a ng-href="#/notes/wishes">Wishes</a></h1>
+              <h1><a ui-sref="notes" ng-click="noteIntroCtrl.setCategory(2)">Wishes</a></h1>
           </md-grid-tile>
 
           <md-grid-tile class="memories">
-              <h1><a ng-href="#/notes/memories">Memories</a></h1>
+              <h1><a ui-sref="notes" ng-click="noteIntroCtrl.setCategory(3)">Memories</a></h1>
           </md-grid-tile>
 
           <md-grid-tile class="thoughts" md-rowspan="2">
-              <h1><a ng-href="#/notes/thoughts">Thoughts</a></h1>
+              <h1><a ui-sref="notes" ng-click="noteIntroCtrl.setCategory(4)">Thoughts</a></h1>
           </md-grid-tile>
 
           <md-grid-tile class="gossip">
-              <h1><a ng-href="#/notes/gossip">Gossip</a></h1>
+              <h1><a ui-sref="notes" ng-click="noteIntroCtrl.setCategory(5)">Gossip</a></h1>
           </md-grid-tile>
 
           <md-grid-tile class="dreams"
               md-rowspan="2" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
-              <h1><a ng-href="#/notes/memories/dreams">Dreams</a></h1>
+              <h1><a ui-sref="notes" ng-click="noteIntroCtrl.setCategory(6)">Dreams</a></h1>
           </md-grid-tile>
 
           <md-grid-tile class="chitChat"
               md-rowspan="2" >
-              <h1><a ng-href="#/notes/memories/chit_chat">Chit Chat</a></h1>
+              <h1><a ui-sref="notes" ng-click="noteIntroCtrl.setCategory(7)">Chit Chat</a></h1>
           </md-grid-tile>
 
           <md-grid-tile class="all">
-              <h1><a ng-href="#/notes/memories/all">All</a></h1>
+              <h1><a ui-sref="notes" ng-click="noteIntroCtrl.setCategory(8)">All</a></h1>
           </md-grid-tile>
 
         </md-grid-list>
